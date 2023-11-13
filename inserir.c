@@ -1,25 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-//cria fila
-typedef struct {
-    int dado;
-    int prioridade;
-} Item;
+#include "filap.h"
 
-typedef struct {
-    Item* itens; 
-    int n; 
-    int tamanho; 
-} FilaP;
-
-FilaP* criarFilaP(int tam) {
-    FilaP* fila = (FilaP*)malloc(sizeof(FilaP));
-    fila->itens = (Item*)malloc((tam + 1) * sizeof(Item));
-    fila->n = 0;
-    fila->tamanho = tam;
-    return fila;
-}
-//fila.c
 void ajuste_insere(FilaP* fila, int filho) {
     int pai = filho / 2;
     Item temp = fila->itens[filho];
