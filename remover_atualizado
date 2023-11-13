@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "filap.h"
+
 void ajuste_de_remocao(FilaP* fila, int pai){
   int filho_esq, filho_dir, maior;
 
