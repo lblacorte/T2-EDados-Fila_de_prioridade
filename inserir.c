@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "filap.h"
+#include "inserir.h"
 
 void ajuste_insere(FilaP* fila, int filho) {
     int pai = filho / 2;
@@ -12,18 +12,22 @@ void ajuste_insere(FilaP* fila, int filho) {
         pai = filho / 2;
     }
 
-    fila->itens[filho] = temp;//opcional so para representar filho continua o mesmo
+    fila->itens[filho] = temp; // Opcional, apenas para representar que o filho continua o mesmo
 }
 
 void insere(FilaP* fila) {
     int prioridade;
     int dado;
+
     if (fila->n < fila->tamanho) {
-        printf("Digite a prioridade a ser inserida: ");
-        scanf("%d", &prioridade);
+        do {
+            printf("Digite a prioridade a ser inserida (deve ser maior que 0): ");
+            scanf("%d", &prioridade);
+        } while (prioridade <= 0); // Garante que a prioridade seja maior que 0
 
         printf("Digite o valor a ser inserido: ");
         scanf("%d", &dado);
+
         fila->n++;
         fila->itens[fila->n].prioridade = prioridade;
         fila->itens[fila->n].dado = dado;
@@ -31,11 +35,4 @@ void insere(FilaP* fila) {
     } else {
         printf("Fila cheia\n");
     }
-  return;
-}
-//main
-int main() {
-    int tam = 100;
-    FilaP* fila = criarFilaP(tam);
-    insere(fila);
 }
