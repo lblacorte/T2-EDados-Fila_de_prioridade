@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1699915758 source:c:\users\admin\documents\t2 - edados\t2 - edados\inserir.c
+	<stdio.h>
+	<stdlib.h>
+	"inserir.h"
+
+1699840063 source:c:\users\admin\documents\t2 - edados\t2 - edados\filap.c
+	<stdio.h>
+	<stdlib.h>
+	"filap.h"
+
+1699915132 c:\users\admin\documents\t2 - edados\t2 - edados\filap.h
+
+1699918331 source:c:\users\admin\documents\t2 - edados\t2 - edados\imprimir_heap.c
+	<stdio.h>
+	<stdlib.h>
+	"imprimir_heap.h"
+
+1699918169 source:c:\users\admin\documents\t2 - edados\t2 - edados\main.c
+	<stdio.h>
+	<stdlib.h>
+	"filap.h"
+	"inserir.h"
+	"remover.h"
+	"imprimir_heap.h"
+
+1699915132 source:c:\users\admin\documents\t2 - edados\t2 - edados\remover.c
+	<stdio.h>
+	<stdlib.h>
+	"remover.h"
+
+1699915132 c:\users\admin\documents\t2 - edados\t2 - edados\imprimir_heap.h
+	"filap.h"
+
+1699915758 c:\users\admin\documents\t2 - edados\t2 - edados\inserir.h
+	"filap.h"
+
+1699915132 c:\users\admin\documents\t2 - edados\t2 - edados\remover.h
+	"filap.h"
+
